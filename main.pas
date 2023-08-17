@@ -19,7 +19,6 @@ function regSelection(reg:str): int;
 var
   resulta:int;
 begin
-     resulta:=5;
      case reg of
      'ah':begin resulta:=0; end;
      'al':begin resulta:=1; end;
@@ -34,7 +33,6 @@ begin
      'cx':begin resulta:=12; end;
      'dx':begin resulta:=14; end;
      end;
-     regSelection:=result;
 
      regSelection:=resulta;
 end;
@@ -67,6 +65,9 @@ end;
 
 end;
 
+procedure add(
+
+
 var
   ax, bx, cx, dx, c, z, v, n,i:integer;    //registros
   instruction, op1, op2:str;
@@ -90,17 +91,17 @@ begin
               showFlags(c,z,v,n,reg);
          end;
   'add': begin
-      writeln('add') end;
+      writeln('wip') end;
   'inc': begin
-      writeln('inc') end;
+      writeln('wip') end;
   'sub': begin
-      writeln('sub') end;
+      writeln('wip') end;
   'cmp': begin
-      writeln('cmp') end;
+      writeln('wip') end;
   'dec': begin
-      writeln('dec') end;
+      writeln('wip') end;
   else writeln('instruction not found');
   end;
 
    until (instruction = 'halt');
-end.     
+end.    
